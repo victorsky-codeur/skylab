@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="main" id="Acceuil">
+        <section class="header-section">
+            <div class="container">
+                <header class="navbar">
+                    <div class="logo">
+                        <!--<img src="" alt="e-commerce logo"> -->  
+                        <h1>@skylab</h1>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#Acceuil">Acceuil</a></li>
+                            <li><a href="#produit">Produit</a></li>
+                            <li><a href="">Apropos</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><button class='loginbtn'
+                                onclick="document.getElementById('login-form').style.display='block'"
+                                style="width:auto;">Account</button></li>
+                        </ul>
+                    </nav>
+                </header>
+          <!------Account------>
+    <div id='login-form'class='login-page'>
+        <div class="form-box">
+            <div class="button-box">
+                <div id='btn'></div>
+                <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                <button type='button'onclick='Register()'class='toggle-btn'>Register</button>
+            </div>
+            <form id='login'class='input-group-login'>
+                <input type='text'class='input-field'placeholder='Email Id'required>
+                <input type='password'class='input-field'placeholder='Enter password'required>
+                <input type='checkbox'class='check-box'><span>Remember password</span>
+                <button type='submit'class='submit-btn'>Log In</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event)
+        {
+            if (event.target == modal)
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+                <div class="row">
+                    <div class="col-2">
+                        <h1>Donnez a votre vie un nouveau style !</h1>
+                        <p>Que des chaussures de qualiter ici faites vos choix en tout securite.<br>
+                            Faites nous confiance et allez plus loin</p>
+                        <a href="">Explorez Maintenan &#8594;</a>    
+                    </div>
+                    <div class="col-2">
+                        <img src="image/sneaker-3297257_960_720.jpg" alt="landing image">
+                    </div>
+                </div>
+            </div>
+            <!--session des categories-->
+            <section class="categories">
+            <div class="container">
+                <h2>Categories veddetes</h2>
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="image/pexels-photo-9813525.jpeg" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="image/pexels-photo-6776612.jpeg" alt="">
+                        </div>
+                        <div class="col-3">
+                            <img src="image/pexels-photo-5758678.jpeg" alt="">
+                        </div>
+                    </div>
+            </div>
+            </section>
+        </section>
+        <!-- Meilleurs produits -->
+        <section class="main" id="produit">
+            <section class="featured-products">
+                <div class="container">
+                    <h2>Meilleurs produits</h2>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="image/pexels-photo-12740000.jpeg" alt="produit 1">
+                            <h3> Shoes blanc</h3>
+                            <div class="raiting">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>5000 fcfa</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="image/pexels-photo-9400750.jpeg" alt="produit 1">
+                            <h3> Shoes orange</h3>
+                            <div class="raiting">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>5500 fcfa</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="image/pexels-photo-5954854.jpeg" alt="produit 1">
+                            <h3> Shoes noir</h3>
+                            <div class="raiting">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>4500 fcfa</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="image/pexels-photo-10657970.jpeg" alt="produit 1">
+                            <h3> Shoes vert</h3>
+                            <div class="raiting">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <p>6000 fcfa</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="image/pexels-photo-12002581.jpeg" alt="produit 1">
+                            <h3> Shoes blanc</h3>
+                            <div class="raiting">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>5000 fcfa</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="image/pexels-photo-1102777.jpeg" alt="produit 1">
+                            <h3> Shoes orange</h3>
+                            <div class="raiting">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>5500 fcfa</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="image/pexels-photo-2529158.jpeg" alt="produit 1">
+                            <h3> Shoes noir</h3>
+                            <div class="raiting">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>4500 fcfa</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="image/pexels-photo-9400754.jpeg" alt="produit 1">
+                            <h3> Shoes vert</h3>
+                            <div class="raiting">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <p>6000 fcfa</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Nos dernier produits -->
+            <section class="featured-products">
+                <div class="container">
+                    <h2>Nos dernier produits</h2>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="image/pexels-photo-7445820.jpeg" alt="produit 1">
+                            <h3> Shoes jordan rouge</h3>
+                            <div class="raiting">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>3000 fcfa</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="image/pexels-photo-8491711.jpeg" alt="produit 1">
+                            <h3> Shoes Rose</h3>
+                            <div class="raiting">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>5500 fcfa</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="image/pexels-photo-8546512.jpeg" alt="produit 1">
+                            <h3> Shoes gris-orange</h3>
+                            <div class="raiting">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>8000 fcfa</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="image/rooftops-2557491__340.jpg" alt="produit 1">
+                            <h3> Shoes vert</h3>
+                            <div class="raiting">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>6000 fcfa</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="image/pexels-photo-4061395.jpeg" alt="produit 1">
+                            <h3> Shoes jordan </h3>
+                            <div class="raiting">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>3500 fcfa</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="image/pexels-photo-10924183.jpeg" alt="produit 1">
+                            <h3> Shoes Rose</h3>
+                            <div class="raiting">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>4500 fcfa</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="image/pexels-photo-11870326.jpeg" alt="produit 1">
+                            <h3> Shoes noir</h3>
+                            <div class="raiting">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>5000 fcfa</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="image/shoes-832864__340.jpg" alt="produit 1">
+                            <h3> Shoes vert</h3>
+                            <div class="raiting">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <p>4000 fcfa</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!----- footer------>
+        <footer>
+            <h1>Nos services</h1>
+            <div class="services">
+                <div class="service">
+                    <h3>Livraison gratuite</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum exercitationem blanditiis perferendis porro voluptatibus. Recusandae, impedit! Nostrum, reprehenderit ex vel ea necessitatibus quasi inventore odio dolorem adipisci in tempore.</p>
+                </div>
+                <div class="service">
+                    <h3>Paiement en ligne</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum exercitationem blanditiis perferendis porro voluptatibus. Recusandae, impedit! Nostrum, reprehenderit ex vel ea necessitatibus quasi inventore odio dolorem adipisci in tempore.</p>
+                </div>
+                <div class="service">
+                    <h3>Aime ou rembourse</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nostrum exercitationem blanditiis perferendis porro voluptatibus. Recusandae, impedit! Nostrum, reprehenderit ex vel ea necessitatibus quasi inventore odio dolorem adipisci in tempore.</p>
+                </div>
+            </div>
+            <p id="contact">
+                contact: 92020152 / 98412411 
+            </p>
+        </footer>
+    </section>    
+  
+</body>
+</html>
